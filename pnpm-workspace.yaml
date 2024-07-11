@@ -1,0 +1,4 @@
+packages:
+  - 'packages/icons'
+  - 'packages/react-icons'
+  - 'packages/website'

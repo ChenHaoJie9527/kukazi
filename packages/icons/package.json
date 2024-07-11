@@ -1,0 +1,18 @@
+{
+  "name": "@kukazi/icons",
+  "version": "1.0.0",
+  "description": "This is the svg icon source file",
+  "main": "main/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -b && node convert-svg.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "typescript": "^5.5.3"
+  }
+}

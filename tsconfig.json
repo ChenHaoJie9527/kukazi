@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "rootDir": "./packages",
+    "composite": true
+  },
+  "include": ["packages/**/*.ts", "packages/**/*.tsx"],
+  "references": [
+    { "path": "./packages/icons" },
+    { "path": "./packages/react-icons" },
+    { "path": "./packages/website" }
+  ]
+}

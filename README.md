@@ -11,7 +11,25 @@
    - 学习使用`InKscape` 软件制作`SVG`图标
    - 学习 **SVG Tutorial** （https://svg-tutorial.com/）教程
 
-3. 如何实施
+3. 如何实施 or 计划
+
+   - 使用**monorepo**作为项目架构
+   - 默认使用**React**框架
+   - 使用`TypeScript`静态语言
+   - `pnpm`构建工具
+   - **packages**子包分别是**icons**，**react-icons**，**website**，**core**，**utils**，**types**，**scripts**
+     - icons目录，存储原始资源，不做具体实现，只提供图标服务
+     - react-icons 这个包是将**SVG**图标转换为React组件的实现。专注于React特定的实现，而不影响原始图标
+     - website 是用于展示和文档的网站包。将其作为单独的包，是因为它可以独立于库本身进行开发和部署
+     - core 提供主要代码方法
+     - utils 提供通用公共方法，变量，常量等
+     - types 该目录是集中管理`TypeScript`类型定义，将按照功能或者模块来组织类型定义文件
+       - `index.ts`
+       - `icon.ts`
+       - `react-component.ts`
+       - `common.ts`
+       - `packge.json` 
+     - scripts 集中管理构建和开发脚本，为什么不使用 build 而是scripts，因为scripts 语义上具有更广泛的意义
 
 4. 后续计划
 

@@ -1,0 +1,18 @@
+{
+    "name": "@kukazi/scripts",
+    "version": "1.0.0",
+    "bin": {
+        "kukazi-go": "./bin/cli.js"
+    },
+    "dependencies": {
+        "typescript": "^5.x",
+        "rollup": "^4.x",
+        "vitest": "^1.x",
+        "@rollup/plugin-typescript": "^11.x",
+        "@rollup/plugin-node-resolve": "^15.x",
+        "@rollup/plugin-commonjs": "^25.x",
+        "eslint": "^8.x",
+        "prettier": "^3.x",
+        "tsup": "^8.x"
+    }
+}

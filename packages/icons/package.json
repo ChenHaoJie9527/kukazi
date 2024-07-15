@@ -6,8 +6,9 @@
   "types": "dist/index.d.ts",
   "private": true,
   "scripts": {
-    "optimize": "kukazi-scripts icon-tasks",
-    "build": "kukazi-scripts icon-tasks && tsc"
+    "optimize-svg": "kukazi-scripts optimize-svg src",
+    "build": "kukazi-scripts icon-tasks && tsc",
+    "generate-svg-index": "kukazi-scripts generate-svg-index src/icons"
   },
   "keywords": [],
   "author": "",

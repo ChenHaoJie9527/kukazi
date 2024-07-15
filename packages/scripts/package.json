@@ -1,6 +1,7 @@
 {
     "name": "@kukazi/scripts",
     "version": "1.0.0",
+    "type": "commonjs",
     "bin": {
         "kukazi-scripts": "./dist/bin/cli.js"
     },
@@ -19,5 +20,9 @@
     "devDependencies": {
         "@types/svgo": "^3.0.0",
         "svgo": "^3.3.2"
+    },
+    "scripts": {
+        "build": "tsc",
+        "prepack": "npm run build"
     }
 }

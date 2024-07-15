@@ -13,8 +13,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@svgr/cli": "^8.1.0",
-    "@svgr/core": "^8.1.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.x"
   },

@@ -112,12 +112,74 @@
 
      - 统一在根目录里使用一个`gitgnore`文件，可以简化管理，避免冗余，当出现特殊情况时，比如`packages/react-icons/special-file.txt`，可以下探到指定的文件路径
 
-   - 依赖版本如何控制？
+   - `pnpm-lock.yaml`文件的作用
 
-     - 首先在根目录里的`pnpm-lock.yaml`是用于记录版本信息的，在.`gitgnore`里填写`pnpm-lock.yaml`可以确保锁文件被版本控制
-     - 
+     - 这个文件记录项目所需的依赖树
+     - 确保所有开发环境里使用相同版本依赖
+     - 管理所有子包的依赖
+     - 特别要注意.`gitgnore`里不要忽略`pnpm-lock.yaml`
 
-   - 
+   - `monorepo`工作方式是怎么运行的？
+
+     根目录运行 `pnpm install`:
+
+     - 是的，当你在根目录运行 `pnpm install`，它会安装根目录的 `package.json` 中列出的所有依赖，以及所有子包 `(workspace packages)` 的依赖。
+     - pnpm 会读取 pnpm-workspace.yaml 文件来识别所有的子包。
+
+     根目录安装的依赖: 当你在根目录安装 `@svgr/cli` 和 `@svgr/core`：
+
+     ```
+     Copy
+     
+     pnpm add -D @svgr/cli @svgr/core
+     ```
+
+     - 这些依赖会被安装到根目录的 node_modules 中。
+     - 默认情况下，子包不能直接访问这些依赖。
+
+     子包访问根目录依赖:
+
+     - `pnpm` 使用严格的依赖管理，默认情况下，子包只能访问它们自己 `package.json` 中声明的依赖。
+
+     - 但是，你可以通过以下方式让子包访问根目录的依赖： a. 在子包的 `package.json` 中声明这些依赖，但使用 `workspace` 协议：
+
+       ```json
+       {
+         "devDependencies": {
+           "@svgr/cli": "workspace:*",
+           "@svgr/core": "workspace:*"
+         }
+       }
+       ```
+
+       b. 或者，你可以在根目录的 `package.json` 中使用 "`pnpm.overrides`" 字段来共享这些依赖：
+
+       ```json
+       {
+         "pnpm": {
+           "overrides": {
+             "@svgr/cli": "^6.5.1",
+             "@svgr/core": "^6.5.1"
+           }
+         }
+       }
+       ```
+
+     最佳实践:
+
+     - 对于大多数情况，建议在需要使用这些依赖的具体子包中声明它们。
+     - 只有当某个依赖真的是整个项目都需要的，才考虑在根目录安装。
+     - 使用 workspace 协议（如 `"workspace:*"`）可以确保所有包使用相同版本的依赖，并且可以共享安装。
+
+     注意事项:
+
+     - 如果你在根目录安装了开发依赖（使用 -D 或 --save-dev），这些依赖默认不会被子包继承。
+     - 生产依赖（没有 -D 标志）会被所有子包继承，但这通常不是推荐的做法。
+
+     查看依赖:
+
+     - 你可以使用 `pnpm why <package-name>` 来查看某个包是如何被引入项目的。
+     - `pnpm list` 可以展示当前包的依赖树。
 
 5. 后续计划
 

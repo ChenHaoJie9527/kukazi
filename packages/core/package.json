@@ -1,0 +1,16 @@
+{
+    "name": "@kukazi/core",
+    "version": "1.0.0",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+      "build": "kukazi-go build",
+      "test": "kukazi-go test"
+    },
+    "dependencies": {
+      "@kukazi/types": "workspace:*"
+    },
+    "devDependencies": {
+      "@kukazi/scripts": "workspace:*"
+    }
+  }

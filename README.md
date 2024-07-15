@@ -38,5 +38,77 @@
        - dev 针对开发业务
        - test 针对测试业务
 
-4. 后续计划
+4. 思考
+
+   - 最开始提到的，使用`TypeScript`静态语言开发，然而我无法搞清楚`TypeScript`究竟是在根目录里设置还是分别为每个子包单独设置，要如何达成一个平衡点呢？
+
+     - 采用混合法，通常在根目录里设置`tsconfig.json`的一些基础配置，然后分别在每个子包设置各自的`tsconfig.json`配置，并通过`extends`选项引用根目录的`tsconfig.json`
+
+     - 当前根目录`tsconfig.json`文件
+
+       ```json
+       {
+         "compilerOptions": {
+           "target": "ES2016",
+           "module": "ESNext",
+           "moduleResolution": "node",
+           "declaration": true,
+           "strict": true,
+           "esModuleInterop": true,
+           "skipLibCheck": true,
+           "forceConsistentCasingInFileNames": true,
+           "baseUrl": ".",
+           "paths": {
+             "@your-scope/*": ["packages/*/src"]
+           }
+         },
+         "references": [
+           { "path": "./packages/icons" },
+           { "path": "./packages/react-icons" },
+           { "path": "./packages/website" },
+           { "path": "./packages/core" },
+           { "path": "./packages/utils" },
+           { "path": "./packages/types" },
+           { "path": "./packages/scripts" }
+         ],
+         "exclude": ["node_modules", "**/dist"]
+       }
+       ```
+
+     - 其他子包，以package/icons/tsconfig.json为例
+
+       ```json
+       {
+         "extends": "../../tsconfig.json",
+         "compilerOptions": {
+           "outDir": "./dist",
+           "rootDir": "./src",
+           "composite": true,
+           "declaration": true,
+           "declarationMap": true,
+         },
+         "include": ["src/**/*"],
+         "exclude": ["node_modules", "dist"]
+       }
+       ```
+
+   - 为什么根目录里的`tsconfig.json`会出现警告，说子包里的`tsconfig.json`必须拥有设置 "`composite`": `true`
+
+     - 出现这个问题的原因是在于根目录`tsconfig.json`里使用`references`选项，这些被引用的子包是复合项目，允许更快的类型检查和增量编译
+
+     - 解决办法：在每个子包里的tsconfig.json新增三个选项
+
+       ```json
+       {
+       	"composite": true,
+           "declaration": true,
+           "declarationMap": true
+       }
+       ```
+
+       这三个选项确保每个子包可以启用项目引用特性，改善IDE的性能和类型检查速度
+
+   - 
+
+5. 后续计划
 

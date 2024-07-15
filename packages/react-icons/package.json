@@ -4,17 +4,16 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc -b"
+    "build": "kukazi-go build",
+    "test": "kukazi-go test"
   },
   "dependencies": {
     "@kukazi/icons": "workspace:*",
-    "react": "^18.3.1"
+    "@kukazi/types": "workspace:*",
+    "react": "^18.x"
   },
   "devDependencies": {
-    "typescript": "^5.5.3",
-    "@kukazi/build-icons": "workspace:*"
-  },
-  "peerDependencies": {
-    "react": "^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0"
+    "@kukazi/scripts": "workspace:*",
+    "@types/react": "^18.x"
   }
 }

@@ -1,23 +1,26 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
+    "target": "ES2016",
     "module": "ESNext",
-    "moduleResolution": "Node",
+    "moduleResolution": "node",
+    "declaration": true,
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "declaration": true,
-    "declarationMap": true,
-    "sourceMap": true,
-    "outDir": "./dist",
-    "rootDir": "./packages",
-    "composite": true
+    "baseUrl": ".",
+    "paths": {
+      "@your-scope/*": ["packages/*/src"]
+    }
   },
-  "include": ["packages/**/*.ts", "packages/**/*.tsx"],
   "references": [
     { "path": "./packages/icons" },
     { "path": "./packages/react-icons" },
-    { "path": "./packages/website" }
-  ]
+    { "path": "./packages/website" },
+    { "path": "./packages/core" },
+    { "path": "./packages/utils" },
+    { "path": "./packages/types" },
+    { "path": "./packages/scripts" }
+  ],
+  "exclude": ["node_modules", "**/dist"]
 }

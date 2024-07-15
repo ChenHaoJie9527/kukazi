@@ -1,8 +1,12 @@
 {
     "name": "@kukazi/types",
     "version": "1.0.0",
-    "types": "index.ts",
-    "files": [
-        "*.ts"
-    ]
-}
+    "types": "index.d.ts",
+    "scripts": {
+      "build": "tsc",
+      "test": "tsc --noEmit"
+    },
+    "devDependencies": {
+      "typescript": "^5.x"
+    }
+  }

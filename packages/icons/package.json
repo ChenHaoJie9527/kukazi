@@ -2,17 +2,20 @@
   "name": "@kukazi/icons",
   "version": "1.0.0",
   "description": "This is the svg icon source file",
-  "main": "main/index.js",
+  "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "private":true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc -b && node convert-svg.js"
+    "build": "kukazi-go build",
+    "test": "kukazi-go test"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "@kukazi/types": "workspace:*"
+  },
   "devDependencies": {
-    "@types/node": "^20.14.10",
-    "typescript": "^5.5.3"
+    "@kukazi/scripts": "workspace:*"
   }
 }

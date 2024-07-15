@@ -4,10 +4,10 @@
   "description": "This is the svg icon source file",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "private":true,
+  "private": true,
   "scripts": {
-    "build": "kukazi-go build",
-    "test": "kukazi-go test"
+    "optimize": "kukazi-scripts icon-tasks",
+    "build": "kukazi-scripts icon-tasks && tsc"
   },
   "keywords": [],
   "author": "",

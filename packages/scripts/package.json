@@ -2,17 +2,22 @@
     "name": "@kukazi/scripts",
     "version": "1.0.0",
     "bin": {
-        "kukazi-go": "./bin/cli.js"
+        "kukazi-scripts": "./dist/bin/cli.js"
     },
     "dependencies": {
-        "typescript": "^5.x",
-        "rollup": "^4.x",
-        "vitest": "^1.x",
-        "@rollup/plugin-typescript": "^11.x",
-        "@rollup/plugin-node-resolve": "^15.x",
         "@rollup/plugin-commonjs": "^25.x",
+        "@rollup/plugin-node-resolve": "^15.x",
+        "@rollup/plugin-typescript": "^11.x",
         "eslint": "^8.x",
         "prettier": "^3.x",
-        "tsup": "^8.x"
+        "rollup": "^4.x",
+        "tsup": "^8.x",
+        "typescript": "^5.x",
+        "vitest": "^1.x",
+        "@types/node": "^20.14.10"
+    },
+    "devDependencies": {
+        "@types/svgo": "^3.0.0",
+        "svgo": "^3.3.2"
     }
 }

@@ -13,7 +13,7 @@
    - 学习使用`InKscape` 软件制作`SVG`图标
    - 学习 **SVG Tutorial** （https://svg-tutorial.com/）教程
 
-3. 如何实施 or 计划
+3. 项目结构
 
    - 使用**monorepo**作为项目架构
    - 默认使用**React**框架

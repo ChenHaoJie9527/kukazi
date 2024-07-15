@@ -1,5 +1,5 @@
 {
-    "name": "@your-scope/types",
+    "name": "@kukazi/types",
     "version": "1.0.0",
     "types": "index.ts",
     "files": [

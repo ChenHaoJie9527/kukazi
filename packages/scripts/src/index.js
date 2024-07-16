@@ -1,1 +1,1 @@
-export * as svgTasks from "./svgTasks"
+export * from "./svgTasks";

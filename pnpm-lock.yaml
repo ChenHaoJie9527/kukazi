@@ -57,14 +57,14 @@ importers:
   packages/scripts:
     dependencies:
       '@rollup/plugin-commonjs':
-        specifier: ^25.x
+        specifier: ^25.0.8
         version: 25.0.8(rollup@4.18.1)
       '@rollup/plugin-node-resolve':
-        specifier: ^15.x
+        specifier: ^15.2.3
         version: 15.2.3(rollup@4.18.1)
       '@rollup/plugin-typescript':
-        specifier: ^11.x
-        version: 11.1.6(rollup@4.18.1)(typescript@5.5.3)
+        specifier: ^11.1.6
+        version: 11.1.6(rollup@4.18.1)(tslib@2.6.3)(typescript@5.5.3)
       '@types/node':
         specifier: ^20.14.10
         version: 20.14.10
@@ -75,8 +75,11 @@ importers:
         specifier: ^3.x
         version: 3.3.3
       rollup:
-        specifier: ^4.x
+        specifier: ^4.18.1
         version: 4.18.1
+      tslib:
+        specifier: ^2.6.3
+        version: 2.6.3
       tsup:
         specifier: ^8.x
         version: 8.1.0(ts-node@10.9.2)(typescript@5.5.3)
@@ -734,7 +737,7 @@ packages:
       rollup: 4.18.1
     dev: false
 
-  /@rollup/plugin-typescript@11.1.6(rollup@4.18.1)(typescript@5.5.3):
+  /@rollup/plugin-typescript@11.1.6(rollup@4.18.1)(tslib@2.6.3)(typescript@5.5.3):
     resolution: {integrity: sha512-R92yOmIACgYdJ7dJ97p4K69I8gg6IEHt8M7dUBxN3W6nrO8uUxX5ixl0yU/N3aZTi8WhPuICvOHXQvF6FaykAA==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
@@ -750,6 +753,7 @@ packages:
       '@rollup/pluginutils': 5.1.0(rollup@4.18.1)
       resolve: 1.22.8
       rollup: 4.18.1
+      tslib: 2.6.3
       typescript: 5.5.3
     dev: false
 
@@ -2723,6 +2727,10 @@ packages:
       typescript: 5.5.3
       v8-compile-cache-lib: 3.0.1
       yn: 3.1.1
+    dev: false
+
+  /tslib@2.6.3:
+    resolution: {integrity: sha512-xNvxJEOUiWPGhUuUdQgAJPKOOJfGnIyKySOc09XkKsgdUV/3E2zvwZYdejjmRgPCgcym1juLH3226yA7sEFJKQ==}
     dev: false
 
   /tsup@8.1.0(ts-node@10.9.2)(typescript@5.5.3):

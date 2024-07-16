@@ -1,16 +1,15 @@
 #!/usr/bin/env node
-const { svgTasks } = require('../src');
-
-const [,, command, ...args] = process.argv;
+const { svgTasks } = require('../index');
+const [, , command, ...args] = process.argv;
 
 switch (command) {
-  case 'optimize-svg':
+  case "optimize-svg":
     svgTasks.optimizeSvgsInDirectory(args[0] || process.cwd()).catch(console.error);
     break;
-  case 'generate-svg-index':
+  case "generate-svg-index":
     svgTasks.generateIndex(args[0] || process.cwd()).catch(console.error);
     break;
   default:
-    console.error('Unknown command:', command);
+    console.error("Unknown command:", command);
     process.exit(1);
 }

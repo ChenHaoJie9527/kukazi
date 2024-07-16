@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-const { svgTasks } = require('../index');
+const svgTasks = require('../index');
 const [, , command, ...args] = process.argv;
 
 switch (command) {

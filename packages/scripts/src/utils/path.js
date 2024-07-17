@@ -1,5 +1,7 @@
-import * as path from 'path';
+const { join, extname, basename } = require("path");
 
-export const join = path.join;
-export const extname = path.extname;
-export const basename = path.basename;
+module.exports = {
+  join,
+  extname,
+  basename,
+};

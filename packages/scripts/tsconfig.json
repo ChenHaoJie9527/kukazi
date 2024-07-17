@@ -8,7 +8,7 @@
     "declarationMap": true,
     "target": "ES6",
     "types": ["node"],
-    "module": "ESNext",
+    "module": "CommonJS",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "noImplicitAny": false,
@@ -19,5 +19,5 @@
     "allowJs": true
   },
   "include": ["src/**/*", "bin/**/*"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "dist"]
 }

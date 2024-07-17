@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "type": "commonjs",
     "bin": {
-        "kukazi-scripts": "./dist/bin/cli.cjs"
+        "kukazi-scripts": "./dist/bin/cli.js"
     },
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
@@ -22,10 +22,13 @@
     },
     "devDependencies": {
         "@types/svgo": "^3.0.0",
+        "boxen": "^4.2.0",
+        "chalk": "^4.1.2",
+        "figlet": "^1.7.0",
         "svgo": "^3.3.2"
     },
     "scripts": {
-        "build": "rollup --config rollup.config.ts --configPlugin typescript",
+        "build": "rollup --config rollup.config.js --configPlugin typescript",
         "prepack": "npm run build"
     }
 }

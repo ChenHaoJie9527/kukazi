@@ -1,5 +1,7 @@
-import * as fs from 'fs/promises';
+const fs = require('fs').promises;
 
-export const readFile = fs.readFile;
-export const writeFile = fs.writeFile;
-export const readdir = fs.readdir;
+module.exports = {
+  readFile: fs.readFile,
+  writeFile: fs.writeFile,
+  readdir: fs.readdir
+};

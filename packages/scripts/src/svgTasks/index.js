@@ -1,2 +1,8 @@
-export * from './optimize';
-export * from './generateIndex';
+const { optimizeSvg, optimizeSvgsInDirectory } = require("./optimize");
+const { generateIndex } = require("./generateIndex");
+
+module.exports = {
+  optimizeSvg,
+  generateIndex,
+  optimizeSvgsInDirectory,
+};

@@ -1,7 +1,7 @@
-import * as fs from "../utils/fs";
-import * as path from "../utils/path";
+const fs = require("../utils/fs");
+const path = require("../utils/path");
 
-export async function generateIndex(directory) {
+async function generateIndex(directory) {
   const files = await fs.readdir(directory);
   let indexContent = "";
 
@@ -14,3 +14,7 @@ export async function generateIndex(directory) {
 
   await fs.writeFile(path.join(directory, "index.ts"), indexContent);
 }
+
+module.exports = {
+  generateIndex,
+};

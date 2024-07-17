@@ -1,10 +1,13 @@
 #!/usr/bin/env node
-const svgTasks = require('../index');
+
+const { svgTasks } = require("../index.js");
 const [, , command, ...args] = process.argv;
 
 switch (command) {
   case "optimize-svg":
-    svgTasks.optimizeSvgsInDirectory(args[0] || process.cwd()).catch(console.error);
+    svgTasks
+      .optimizeSvgsInDirectory(args[0] || process.cwd())
+      .catch(console.error);
     break;
   case "generate-svg-index":
     svgTasks.generateIndex(args[0] || process.cwd()).catch(console.error);

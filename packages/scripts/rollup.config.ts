@@ -11,7 +11,7 @@ export default defineConfig([
             dir: 'dist/bin',
             format: 'cjs'
         },
-        external: ['svgo', '../dist/index'] // 确保CLI可以正确引用主模块
+        // external: ['svgo', '../dist/index'] // 确保CLI可以正确引用主模块
     },
     {
         input: 'src/index.js',

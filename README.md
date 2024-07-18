@@ -1,7 +1,7 @@
 
 
 <p align="center">
-  <a href="https://github.com/yourusername/kukazi">
+  <a href="https://github.com/ChenHaoJie9527/kukazi">
     <img src="./assets/kukazi-logo.svg" alt="Kukazi Logo" width="300" height="auto">
   </a>
 </p>
@@ -12,14 +12,12 @@
   A powerful SVG icon library for modern web applications
 </p>
 <p align="center">
-  <a href="https://github.com/yourusername/kukazi/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/yourusername/kukazi" alt="license">
-  </a>
+  <a href="https://github.com/ChenHaoJie9527/kukazi/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
   <a href="https://www.npmjs.com/package/kukazi">
     <img src="https://img.shields.io/npm/v/kukazi" alt="npm version">
   </a>
-  <!-- 你可以添加更多相关的徽章 -->
 </p>
+
 
 ## About
 

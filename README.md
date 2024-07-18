@@ -8,6 +8,8 @@
 
    借此目前已经失业，当前市场环境形势严峻，学历过低，难以找到工作，因此对自己的职业发展规划做一些重要的调整，催生出开发图标库是其中调整内容之一。
 
+   网站设计思路图：https://excalidraw.com/#json=_xxmu_FD3DbB8Eqq5YscO,YFTfun9elNInQ9o7RbQPNg
+
 2. 学习计划
 
    - 学习使用`InKscape` 软件制作`SVG`图标
@@ -26,17 +28,7 @@
      - core 提供核心功能与基础组件
      - utils 提供辅助函数和工具，属性，常量等
      - types 该目录是集中管理`TypeScript`类型定义，将按照功能或者模块来组织类型定义文件
-       - `index.ts`
-       - `icon.ts`
-       - `react-component.ts`
-       - `common.ts`
-       - `packge.json` 
      - scripts 集中管理构建和开发脚本，为什么不使用 build 而是scripts，因为scripts 语义上具有更广泛的意义
-       - config 提供一些配置文件
-       - utils 提供辅助函数
-       - build 针对打包业务
-       - dev 针对开发业务
-       - test 针对测试业务
 
 4. 思考
 

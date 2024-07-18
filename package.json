@@ -11,12 +11,12 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
   "dependencies": {
     "ts-node": "^10.9.2",
     "typescript": "^5.x"
   },
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "license": "MIT"
 }

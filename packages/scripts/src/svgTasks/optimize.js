@@ -36,7 +36,7 @@ async function optimizeSvgsInDirectory(directory) {
       svgFiles.map((file) => getOptimizeSvgList(directory, file))
     );
     // console.log(`Successfully optimized ${results.length} SVG files.`);
-    setTerminalMessage(`Successfully optimized ${results.length} SVG files.`);
+    setTerminalMessage(results, files);
     return `Successfully optimized ${results.length} SVG files.`;
   } catch (error) {
     console.error(`Error optimizing SVGs in ${directory}:`, error);

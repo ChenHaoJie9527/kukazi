@@ -10,7 +10,7 @@
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
     "paths": {
-      "@your-scope/*": ["packages/*/src"]
+      "@kukazi/*": ["packages/*/src"]
     }
   },
   "references": [

@@ -1,16 +1,17 @@
 {
-    "name": "@kukazi/core",
-    "version": "1.0.0",
-    "main": "dist/index.js",
-    "types": "dist/index.d.ts",
-    "scripts": {
-      "build": "kukazi-go build",
-      "test": "kukazi-go test"
-    },
-    "dependencies": {
-      "@kukazi/types": "workspace:*"
-    },
-    "devDependencies": {
-      "@kukazi/scripts": "workspace:*"
-    }
+  "name": "@kukazi/core",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "private": true,
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "typescript": "^5.x",
+    "vite": "^5.x"
   }
+}

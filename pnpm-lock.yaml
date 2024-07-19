@@ -16,14 +16,16 @@ importers:
         version: 5.5.3
 
   packages/core:
-    dependencies:
-      '@kukazi/types':
-        specifier: workspace:*
-        version: link:../types
     devDependencies:
-      '@kukazi/scripts':
-        specifier: workspace:*
-        version: link:../scripts
+      '@types/node':
+        specifier: ^20.14.10
+        version: 20.14.10
+      typescript:
+        specifier: ^5.x
+        version: 5.5.3
+      vite:
+        specifier: ^5.x
+        version: 5.3.3(@types/node@20.14.10)
 
   packages/icons:
     dependencies:

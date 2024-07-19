@@ -1,11 +1,17 @@
 {
   "name": "@kukazi/core",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "This is the kukazi core package",
+  "main": "./dist/kukazi-core.umd.js",
+  "module": "./dist/kukazi-core.es.js",
+  "types": "./dist/index.d.ts",
   "type": "module",
   "private": true,
-  "scripts": {},
+  "scripts": {
+    "build": "tsc && vite build",
+    "coverage": "vite run --coverage",
+    "test": "vitest"
+  },
   "keywords": [],
   "author": "",
   "license": "MIT",
@@ -14,5 +20,11 @@
     "typescript": "^5.x",
     "vite": "^5.x",
     "vitest": "^1.x"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/kukazi-core.es.js",
+      "require": "./dist/kukazi-core.umd.js"
+    }
   }
 }

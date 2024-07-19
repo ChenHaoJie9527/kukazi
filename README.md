@@ -23,6 +23,12 @@
 
 Kukazi is a modern, flexible SVG icon library designed for easy integration into web applications. It provides a wide range of customizable icons to enhance your user interface.
 
+## Original intention
+
+- Borrow from many first-class icon libraries, such as Lucide Icons, Feather Icons, etc.
+- Official libraries and integrations with popular frameworks and design tools.
+- Implement a better interactive experience and a lighter icon library
+
 ## Features
 
 - Extensive collection of SVG icons

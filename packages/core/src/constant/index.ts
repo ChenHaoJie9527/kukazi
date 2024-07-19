@@ -1,0 +1,1 @@
+export const SVGXML = 'image/svg+xml';

@@ -1,5 +1,7 @@
 import { defineConfig } from "vitest/config"
+import { normalizePath } from "vite"
 import path from "path"
+import { viteStaticCopy } from "vite-plugin-static-copy"
 
 export default defineConfig({
     build: {
@@ -26,6 +28,17 @@ export default defineConfig({
         },
     },
     test: {
-        environment: "jsdom"
-    }
+        environment: "jsdom",
+        globals: true
+    },
+    plugins: [
+        viteStaticCopy({
+            targets: [
+                {
+                    src: normalizePath(path.resolve(__dirname, "assets/*.svg")),
+                    dest: "assets",
+                },
+            ],
+        }),
+    ]
 })

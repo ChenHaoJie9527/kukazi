@@ -7,8 +7,7 @@
   "private": true,
   "scripts": {
     "optimize-svg": "kukazi-scripts optimize-svg src",
-    "build": "kukazi-scripts icon-tasks && tsc",
-    "generate-svg-index": "kukazi-scripts generate-svg-index src/icons"
+    "build": "kukazi-scripts icon-tasks && tsc"
   },
   "keywords": [],
   "author": "",

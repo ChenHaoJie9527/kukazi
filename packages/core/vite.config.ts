@@ -3,6 +3,7 @@ import { normalizePath } from "vite"
 import path from "path"
 import { viteStaticCopy } from "vite-plugin-static-copy"
 import tds from "vite-plugin-dts"
+import { nodePolyfills } from "vite-plugin-node-polyfills"
 
 export default defineConfig({
     build: {
@@ -14,13 +15,13 @@ export default defineConfig({
             },
         },
         rollupOptions: {
-            external: ["react", "react-dom"],
-            output: {
-                globals: {
-                    react: "React",
-                    "react-dom": "ReactDOM",
-                },
-            },
+            external: ["path", "fs/promises"],
+            // output: {
+            //     globals: {
+            //         react: "React",
+            //         "react-dom": "ReactDOM",
+            //     },
+            // },
         }
     },
     resolve: {
@@ -42,6 +43,14 @@ export default defineConfig({
                 },
             ],
         }),
-        tds()
+        tds(),
+        nodePolyfills({
+            globals: {
+                // 是否应该添加全局的 polyfills
+                global: false,
+            },
+            // 批量打包哪些polyfills
+            protocolImports: true
+        })
     ]
 })

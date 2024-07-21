@@ -4,14 +4,12 @@ import path from "path"
 export default defineConfig({
     build: {
         lib: {
-            entry: {
-                index: path.resolve(__dirname, "src/index.ts"),
-                cli: path.resolve(__dirname, "src/cli.ts")
-            },
-            formats: ['es']
+            entry: path.resolve(__dirname, 'src/cli.ts'),
+            formats: ['es'],
+            fileName: () => 'cli.js'
         },
         rollupOptions: {
-            external: ["@kukazi-core"],
+            external: ['@kukazi/core']
         },
         outDir: 'dist',
         emptyOutDir: true,

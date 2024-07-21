@@ -26,7 +26,7 @@ export function mockSVGFiles(files: { [filename: string]: string }) {
     }
 }
 
-export function setTerminalMessage(message: any, files: any[], directory: string, callback = (msg: string) => { }) {
+export function setTerminalMessage(message: any, files: any[], directory: string, callback?: (msg: any) => void) {
     try {
         figlet.text(
             "SVG Optimized!",
@@ -51,7 +51,7 @@ export function setTerminalMessage(message: any, files: any[], directory: string
             }
         );
     } catch (error) {
-        callback(`Error optimizing SVGs in ${directory}:`);
+        callback?.(`Error optimizing SVGs in ${directory}:`);
         throw error;
     }
 }

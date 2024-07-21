@@ -1,9 +1,9 @@
 import { SVGXML } from "@/constant";
-import path from "path";
 import figlet from "figlet"
 import chalk from "chalk"
 import boxen, { BorderStyle } from "boxen"
-import fs from "fs"
+import { fsMock } from "@/mock/fs-mock"
+
 
 export function getSvgElement(svgString: string) {
     const parser = new DOMParser();
@@ -12,9 +12,18 @@ export function getSvgElement(svgString: string) {
     return svgEle;
 }
 
-export function reaSVGFile(fileName: string): string {
-    const filePath = path.resolve(__dirname, '../../src/assets', fileName);
-    return fs.readFileSync(filePath, 'utf-8')
+export function readSVGFile(fileName: string): string {
+    return fsMock.getMockFileSystem().readFileSync(fileName) || '';
+}
+
+export function getAssetPath(fileName: string): string {
+    return fileName;
+}
+
+export function mockSVGFiles(files: { [filename: string]: string }) {
+    for (const [fileName, content] of Object.entries(files)) {
+        fsMock.addMockFile(fileName, content);
+    }
 }
 
 export function setTerminalMessage(message: any, files: any[], directory: string, callback = (msg: string) => { }) {

@@ -13,6 +13,7 @@ export {
     readdir,
     join,
     extname,
-    basename
+    basename,
+    dirname
 }
 

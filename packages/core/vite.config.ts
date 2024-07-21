@@ -15,24 +15,27 @@ export default defineConfig({
             },
         },
         rollupOptions: {
-            external: ["path", "fs/promises"],
-            // output: {
-            //     globals: {
-            //         react: "React",
-            //         "react-dom": "ReactDOM",
-            //     },
-            // },
-        }
+            external: [/^vitest/, /^node:/, 'fs', 'path', 'fs/promise'],
+        },
+        sourcemap: true,
+        // 明确指定构建输出目录
+        outDir: 'dist',
+        // 构建前清空输出目录
+        emptyOutDir: true,
     },
     resolve: {
         alias: {
             "@": path.resolve(__dirname, "./src"),
+            // 为 Node.js 模块提供空的模拟
+            fs: 'rollup-plugin-node-polyfills/polyfills/empty',
+            path: 'rollup-plugin-node-polyfills/polyfills/path',
         },
     },
     test: {
         environment: "jsdom",
         globals: true,
-        setupFiles: ['./src/tests/setup.ts']
+        setupFiles: ['./src/tests/setup.ts'],
+        include: ['src/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
     },
     plugins: [
         viteStaticCopy({

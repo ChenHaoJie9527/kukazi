@@ -1,0 +1,8 @@
+src
+tests
+mocks
+*.test.*
+*.spec.*
+vite.config.ts
+tsconfig.json
+.gitignore

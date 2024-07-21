@@ -16,6 +16,7 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "@types/figlet": "^1.5.8",
     "@types/node": "^20.14.10",
     "jsdom": "^24.1.0",
     "typescript": "^5.x",
@@ -29,5 +30,11 @@
       "import": "./dist/kukazi-core.es.js",
       "require": "./dist/kukazi-core.umd.js"
     }
+  },
+  "dependencies": {
+    "boxen": "^4.2.0",
+    "chalk": "^4.1.2",
+    "figlet": "^1.7.0",
+    "svgo": "^3.3.2"
   }
 }

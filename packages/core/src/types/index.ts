@@ -1,9 +1,9 @@
-export type ChildrenTpe = (SVGElement | string)[]
+export type ChildrenType = (SVGElement | string)[]
 
 export interface SVGElement {
     type: string;
     attributes: Record<string, string>;
-    children: ChildrenTpe
+    children: ChildrenType
 }
 
 export interface ParseSVG {

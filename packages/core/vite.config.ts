@@ -2,6 +2,7 @@ import { defineConfig } from "vitest/config"
 import { normalizePath } from "vite"
 import path from "path"
 import { viteStaticCopy } from "vite-plugin-static-copy"
+import tds from "vite-plugin-dts"
 
 export default defineConfig({
     build: {
@@ -41,5 +42,6 @@ export default defineConfig({
                 },
             ],
         }),
+        tds()
     ]
 })

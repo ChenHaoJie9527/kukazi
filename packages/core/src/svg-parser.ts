@@ -1,4 +1,4 @@
-import { ChildrenTpe, ParseSVG, SVGElement } from "./types";
+import { ChildrenType, ParseSVG, SVGElement } from "./types";
 import { getSvgElement } from "./utils";
 
 export function parseSVG(svgString: string): ParseSVG {
@@ -18,7 +18,7 @@ function parseElement(ele: Element): SVGElement {
         attributes[attr.name] = attr.value;
     }
 
-    const children: ChildrenTpe = []
+    const children: ChildrenType = []
     for (const child of (ele.childNodes as any)) {
         if (child.nodeType === Node.ELEMENT_NODE) {
             children.push(parseElement(child))

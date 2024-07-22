@@ -1,6 +1,6 @@
 import { optimize } from "svgo";
 import { basename, extname, join, } from "@/helpers"
-// import { setTerminalMessage } from "@/utils";
+import { setTerminalMessage } from "@/utils";
 import { fsManager } from "@/fs-manager"
 
 /**
@@ -50,16 +50,24 @@ export async function optimizeSvgsInDirectory(directory: string) {
         // console.log(`Found ${svgFiles.length} SVG files.`);
 
         if (svgFiles.length === 0) {
-            console.warn(`No SVG files found in ${directory}`);
-            return "No SVG files found to optimize.";
+            return {
+                message: `No SVG files found in ${directory}`,
+                files: [],
+            }
         }
 
         const results = await Promise.all(
             svgFiles.map((file) => optimizeSvg(join(directory, file)))
         );
-        // console.log(`Optimization results:`, results);
 
-        return `Successfully optimized ${results.length} SVG files.`;
+        const infos = {
+            message: `Successfully optimized ${results.length} SVG files.`,
+            files: results,
+        };
+
+        setTerminalMessage(infos.message, infos.files, directory)
+
+        return infos
     } catch (error) {
         console.error(`Error optimizing SVGs in ${directory}:`, error);
         throw error;

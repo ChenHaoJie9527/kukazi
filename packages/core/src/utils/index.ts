@@ -1,7 +1,6 @@
 import { SVGXML } from "@/constant";
-import figlet from "figlet"
 import chalk from "chalk"
-import boxen, { BorderStyle } from "boxen"
+import boxen, { Options } from "boxen"
 // import { fsMock } from "@/mock/fs-mock"
 
 
@@ -28,28 +27,30 @@ export function getAssetPath(fileName: string): string {
 
 export function setTerminalMessage(message: any, files: any[], directory: string, callback?: (msg: any) => void) {
     try {
-        figlet.text(
-            "SVG Optimized!",
-            {
-                horizontalLayout: "default",
-                verticalLayout: "default",
-                whitespaceBreak: true,
-            },
-            (err, data) => {
-                if (err) {
-                    console.log("Error in figlet", err);
-                    return;
-                }
-                console.log(chalk.cyan(data));
+        // 创建优化完成的消息
+        const message = [
+            chalk.green.bold(`Optimization complete!`),
+            chalk.green(`Optimized number of files: ${chalk.yellow(files.length)}`),
+            chalk.green(`Optimize file directory: ${chalk.yellow(directory)}`),
+            '',
+        ].join('\n');
 
-                const boxenMessage = boxen(
-                    chalk.green(`Successfully optimized ${message.length} SVG files!\n`) +
-                    chalk.yellow(`Total files processed: ${files.length}`),
-                    { padding: 1, borderColor: "green", borderStyle: BorderStyle.Round }
-                );
-                console.log(boxenMessage);
-            }
+        // 使用 boxen 创建一个漂亮的框
+        const boxenOptions: Options = {
+            padding: 1,
+            margin: 1,
+            borderColor: 'yellow',
+            borderStyle: 'round',
+            title: 'svg optimize',
+            backgroundColor: 'cyan',
+            titleAlignment: 'center'
+        };
+
+        const boxenMessage = boxen(
+            message,
+            boxenOptions,
         );
+        console.log(boxenMessage);
     } catch (error) {
         callback?.(`Error optimizing SVGs in ${directory}:`);
         throw error;

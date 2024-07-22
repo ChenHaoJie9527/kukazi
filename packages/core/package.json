@@ -42,7 +42,7 @@
     }
   },
   "dependencies": {
-    "boxen": "^4.2.0",
+    "boxen": "^6.0.0",
     "chalk": "^4.1.2",
     "figlet": "^1.7.0",
     "svgo": "^3.3.2"

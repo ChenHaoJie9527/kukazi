@@ -9,9 +9,14 @@ export default defineConfig({
             fileName: () => 'cli.js'
         },
         rollupOptions: {
-            external: ['@kukazi/core']
+            external: ['@kukazi/core', 'fs', 'commander', 'path'],
+
         },
         outDir: 'dist',
         emptyOutDir: true,
+        minify: false,
+    },
+    optimizeDeps: {
+        exclude: ['path', 'fs', 'commander', '@kukazi/core']
     }
 })

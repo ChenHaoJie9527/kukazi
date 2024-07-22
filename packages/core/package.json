@@ -4,6 +4,7 @@
   "description": "This is the kukazi core package",
   "main": "./dist/kukazi-core.umd.js",
   "module": "./dist/kukazi-core.es.js",
+  "browser": "./dist/kukazi-core.es.js",
   "types": "./dist/index.d.ts",
   "type": "module",
   "private": true,
@@ -12,7 +13,7 @@
     "README.md"
   ],
   "scripts": {
-    "build": "tsc && vite build",
+    "build": "vite build",
     "coverage": "vite run --coverage",
     "test": "vitest",
     "clean": "rimraf dist"
@@ -24,6 +25,7 @@
     "@types/figlet": "^1.5.8",
     "@types/node": "^20.14.10",
     "jsdom": "^24.1.0",
+    "memfs": "^4.9.3",
     "rimraf": "^6.0.1",
     "rollup-plugin-node-polyfills": "^0.2.1",
     "typescript": "^5.x",

@@ -1,14 +1,19 @@
 import { dirname, join, extname, basename } from "path"
-import { readFile, writeFile, readdir } from "fs/promises"
+import { fs } from "memfs"
 
+const { readFileSync, writeFileSync, readSync, readdirSync, existsSync, readdir } = fs
 
+// const {readFile, writeFile, readdir} = fs.promises
 export {
-    readFile,
-    writeFile,
-    readdir,
+    readFileSync,
+    writeFileSync,
+    readSync,
+    readdirSync,
     join,
     extname,
     basename,
-    dirname
+    dirname,
+    existsSync,
+    readdir
 }
 

@@ -26,9 +26,6 @@ export default defineConfig({
     resolve: {
         alias: {
             "@": path.resolve(__dirname, "./src"),
-            // 为 Node.js 模块提供空的模拟
-            fs: 'rollup-plugin-node-polyfills/polyfills/empty',
-            path: 'rollup-plugin-node-polyfills/polyfills/path',
         },
     },
     test: {
@@ -49,11 +46,16 @@ export default defineConfig({
         tds(),
         nodePolyfills({
             globals: {
-                // 是否应该添加全局的 polyfills
-                global: false,
+                Buffer: true, // can also be 'build', 'dev', or false
+                global: true,
+                process: true,
             },
             // 批量打包哪些polyfills
-            protocolImports: true
+            protocolImports: true,
+            include: ['path', 'fs',],
+            overrides: {
+                fs: 'memfs'
+            },
         })
     ]
 })

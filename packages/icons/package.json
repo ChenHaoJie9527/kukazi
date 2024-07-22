@@ -6,7 +6,7 @@
   "types": "dist/index.d.ts",
   "private": true,
   "scripts": {
-    "optimize-svg": "kukazi-scripts optimize-svg src",
+    "optimize-svg": "kukazi-scripts optimize-svg src -v ",
     "build": "kukazi-scripts icon-tasks && tsc"
   },
   "keywords": [],
@@ -16,6 +16,7 @@
     "@kukazi/types": "workspace:*"
   },
   "devDependencies": {
-    "@kukazi/scripts": "workspace:*"
+    "@kukazi/scripts": "workspace:*",
+    "rimraf": "^6.0.1"
   }
 }

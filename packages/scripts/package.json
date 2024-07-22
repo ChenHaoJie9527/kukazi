@@ -14,6 +14,7 @@
         "@kukazi/core": "workspace:^",
         "@types/node": "^20.14.10",
         "eslint": "^8.x",
+        "memfs": "^4.9.3",
         "prettier": "^3.x",
         "tslib": "^2.6.3",
         "tsup": "^8.x",

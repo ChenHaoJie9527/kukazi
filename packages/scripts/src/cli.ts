@@ -2,11 +2,8 @@
 import { optimizeSvgsInDirectory, fsManager } from "@kukazi/core"
 import { Command } from "commander"
 import { commandMaps } from "./constant"
-import { Volume } from "memfs"
-import fs from "fs"
 import path from "path"
 
-const vol = Volume.fromJSON({})
 
 const program = new Command()
 
@@ -26,7 +23,10 @@ program.command(commandMaps.optimize)
             await optimizeSvgsInDirectory(absPath)
 
             // 将优化后的文件保存回实际文件系统
-            // fsManager.saveToRealFS();
+            fsManager.saveToRealFS();
+
+            // 回收清理 释放内存
+            fsManager.reset()
         } catch (error) {
             console.error('Error optimizing SVG files:', error);
             process.exit(1);

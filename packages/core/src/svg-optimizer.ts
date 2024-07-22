@@ -21,7 +21,7 @@ import { fsManager } from "@/fs-manager"
 
 async function optimizeSvg(filePath: string): Promise<string> {
     try {
-        console.log(`Optimizing file: ${filePath}`);
+        // console.log(`Optimizing file: ${filePath}`);
         // const svgString = readFileSync(filePath, 'utf8') as string;
         const svgString = fsManager.readFile(filePath, {
             encoding: 'utf8',
@@ -40,33 +40,14 @@ async function optimizeSvg(filePath: string): Promise<string> {
  * @param {string} directory 目录路径
  * @description 批量优化目录里的所有svg文件
  */
-// export async function optimizeSvgsInDirectory(directory: string) {
-//     try {
-//         const files = await readdirSync(directory);
-//         console.log('files =>', files);
-//         const svgFiles = files.filter((file) => extname(file.toLocaleString()).toLowerCase() === ".svg");
-//         console.log('svgFiles =>', svgFiles);
-//         const results = await Promise.all(
-//             svgFiles.map((file) => getOptimizeSvgList(directory, file.toLocaleString().toLocaleLowerCase()))
-//         );
-//         console.log('results =>', results);
-//         // console.log(`Successfully optimized ${results.length} SVG files.`);
-//         setTerminalMessage(results, files, directory);
-//         return `Successfully optimized ${results.length} SVG files.`;
-//     } catch (error) {
-//         console.error(`Error optimizing SVGs in ${directory}:`, error);
-//         throw error;
-//     }
-// }
-
 export async function optimizeSvgsInDirectory(directory: string) {
     try {
-        console.log(`Attempting to read directory: ${directory}`);
+        // console.log(`Attempting to read directory: ${directory}`);
         const files = fsManager.readdir(directory);
         // console.log('files =>', files);
 
         const svgFiles = files.filter((file) => extname(file).toLowerCase() === ".svg");
-        console.log(`Found ${svgFiles.length} SVG files.`);
+        // console.log(`Found ${svgFiles.length} SVG files.`);
 
         if (svgFiles.length === 0) {
             console.warn(`No SVG files found in ${directory}`);
@@ -76,8 +57,7 @@ export async function optimizeSvgsInDirectory(directory: string) {
         const results = await Promise.all(
             svgFiles.map((file) => optimizeSvg(join(directory, file)))
         );
-
-        console.log(`Optimization results:`, results);
+        // console.log(`Optimization results:`, results);
 
         return `Successfully optimized ${results.length} SVG files.`;
     } catch (error) {

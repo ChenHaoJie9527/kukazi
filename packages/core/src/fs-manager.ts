@@ -27,28 +27,39 @@ class FsManager {
     }
 
     saveToRealFS() {
-        this.vol.readdirSync('/').forEach((file: string) => {
-            const memPath = path.join('/', file)
-            const realPath = path.join(this.rootDir, file)
-            const content = this.vol.readFileSync(memPath, 'utf8')
-            fs.writeFileSync(realPath, content)
-        })
+        const json = this.getFileSystemJSON()
+        for (const [filePath, content] of Object.entries(json)) {
+            // 移除开头的斜杠并规范化路径
+            const normalizedPath = path.normalize(filePath.replace(/^\//, ''));
+            // 构建完整的文件路径
+            const realPath = path.join(this.rootDir, normalizedPath);
+            const splitPath = realPath.split(':')
+            const result = `${splitPath[0]}:${splitPath[splitPath.length - 1]}`
+            fs.writeFileSync(result, content)
+        }
     }
 
-    checkWriteFiles() {
+    reset() {
+        this.rootDir = ''
+        this.vol = Volume.fromJSON({}, this.rootDir)
+    }
+
+    checkFileSystemJSON() {
         const writeFiles = this.vol.toJSON()
         console.log('writeFiles =>', writeFiles);
     }
 
+    getFileSystemJSON(): { [filePath: string]: string } {
+        return this.vol.toJSON();
+    }
 
     readFile(filePath: string, options: { encoding: string }): string {
         const memPath = path.join('', filePath);
-        console.log('memPath =>', memPath);
         return this.vol.readFileSync(memPath, options.encoding) as string;
     }
 
     writeFile(filePath: string, data: string): void {
-        const memPath = path.join('/', path.relative(this.rootDir, filePath));
+        const memPath = path.join('', filePath);
         this.vol.writeFileSync(memPath, data);
     }
 

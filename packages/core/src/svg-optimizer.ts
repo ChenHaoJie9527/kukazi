@@ -8,17 +8,6 @@ import { fsManager } from "@/fs-manager"
  * @param {string} filePath svg文件路径
  * @description 优化SVG文件函数 读取文件 -> 优化内容 -> 写回文件
  */
-// export async function optimizeSvg(filePath: string) {
-//     try {
-//         const svgString = await readFileSync(filePath, "utf-8");
-//         const result = optimize(svgString.toLocaleString(), { path: filePath });
-//         await writeFileSync(filePath, result.data);
-//     } catch (error) {
-//         console.error(`Error optimizing SVGs in ${filePath}:`, error);
-//         throw error;
-//     }
-// }
-
 async function optimizeSvg(filePath: string): Promise<string> {
     try {
         // console.log(`Optimizing file: ${filePath}`);

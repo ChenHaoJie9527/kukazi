@@ -33,3 +33,17 @@ coverage/
 # 临时文件
 *.tmp
 *.temp
+
+# docs
+docs/.vitepress/cache
+docs/.vitepress/dist
+docs/.vitepress/.temp
+docs/.vitepress/data/iconNodes
+docs/.vitepress/data/iconMetaData.ts
+docs/.vitepress/data/releaseMetaData.json
+docs/.vitepress/data/releaseMetaData
+docs/.vitepress/data/categoriesData.json
+docs/.vitepress/data/iconDetails
+docs/.vitepress/data/relatedIcons.json
+docs/.vercel
+docs/.nitro

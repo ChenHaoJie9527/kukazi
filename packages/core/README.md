@@ -95,7 +95,7 @@ const files = fsManager.readdir('/path/to/directory');
 
 ## 许可
 
-Kukazi Core 采用 [MIT 许可证](https://github.com/ChenHaoJie9527/kukazi-core/blob/main/LICENSE)。
+Kukazi Core 采用 [MIT 许可证](./LICENSE)。
 
 ```tex
 这个整合的 README.md 文件包含了 Kukazi Core 包的所有重要信息，包括简介、主要功能、安装指南、使用示例、API 参考、注意事项、贡献指南和许可信息。它提供了一个全面的概览，可以帮助用户快速了解和使用这个包。

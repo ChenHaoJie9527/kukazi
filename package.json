@@ -5,9 +5,10 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "build": "pnpm run -r build",
-    "test": "pnpm run -r test",
-    "lint": "pnpm run -r lint"
+    "lint": "eslint . --ext .js,.mjs,.cjs,.ts,.tsx",
+    "lint:fix": "eslint . --ext .js,.mjs,.cjs,.ts,.tsx --fix",
+    "format": "prettier --write \"**/*.{js,mjs,cjs,ts,tsx,json,md}\"",
+    "check-format": "prettier --check \"**/*.{js,mjs,cjs,ts,tsx,json,md}\""
   },
   "keywords": [],
   "author": "",

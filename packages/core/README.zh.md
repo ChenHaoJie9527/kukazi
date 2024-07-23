@@ -1,6 +1,6 @@
 # Kukazi Core Package
 
-[English](./README.md)
+[English](./README.en.md)
 
 ## 简介
 

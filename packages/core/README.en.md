@@ -1,6 +1,6 @@
 # Kukazi Core Package
 
-[中文版](./README.zh-CN.md)
+[中文版](./README.zh.md)
 
 ## Introduction
 

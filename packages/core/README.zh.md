@@ -1,5 +1,7 @@
 # Kukazi Core Package
 
+[English](./README.md)
+
 ## 简介
 
 Kukazi Core 是一个专为 SVG 图标优化和管理而设计的强大工具包。它提供了一系列功能，包括 SVG 文件的读取、优化和写入，以及内存文件系统的管理，旨在简化 SVG 处理流程并提高效率。

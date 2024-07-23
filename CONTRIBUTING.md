@@ -50,9 +50,19 @@
 
 ## 代码风格
 
+我们使用 ESLint 和 Prettier 来保持代码风格的一致性。请确保在提交代码之前运行 linter 和格式化工具。
+
 - 使用 2 空格缩进
-- 使用 ES6+ 语法
+- 使用单引号
+- 每行最大长度为 100 字符
+- 使用分号
 - 遵循 [TypeScript 编码指南](https://github.com/microsoft/TypeScript/wiki/Coding-guidelines)
+
+在提交代码之前，请运行以下命令：
+
+```bash
+npm run lint
+npm run format
 
 ## Commit 消息指南
 

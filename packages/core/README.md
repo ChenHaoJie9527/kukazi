@@ -1,7 +1,5 @@
 # Kukazi Core Package
 
-[TOC]
-
 ## 简介
 
 Kukazi Core 是一个专为 SVG 图标优化和管理而设计的强大工具包。它提供了一系列功能，包括 SVG 文件的读取、优化和写入，以及内存文件系统的管理，旨在简化 SVG 处理流程并提高效率。
@@ -97,11 +95,10 @@ const files = fsManager.readdir('/path/to/directory');
 
 ## 许可
 
-Kukazi Core 采用 [MIT 许可证](https://github.com/yourusername/kukazi-core/blob/main/LICENSE)。
+Kukazi Core 采用 [MIT 许可证](https://github.com/ChenHaoJie9527/kukazi-core/blob/main/LICENSE)。
 
 ```tex
 这个整合的 README.md 文件包含了 Kukazi Core 包的所有重要信息，包括简介、主要功能、安装指南、使用示例、API 参考、注意事项、贡献指南和许可信息。它提供了一个全面的概览，可以帮助用户快速了解和使用这个包。
 
 如果您需要对这个文档进行任何调整、添加更多细节或特定的使用场景，请随时告诉我。我很乐意根据您的需求进行修改。
 ```
-

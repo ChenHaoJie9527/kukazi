@@ -28,6 +28,8 @@ importers:
         specifier: ^3.x
         version: 3.3.3
 
+  packages/base: {}
+
   packages/core:
     dependencies:
       boxen:
@@ -39,6 +41,9 @@ importers:
       figlet:
         specifier: ^1.7.0
         version: 1.7.0
+      svg-parser:
+        specifier: ^2.0.4
+        version: 2.0.4
       svgo:
         specifier: ^3.3.2
         version: 3.3.2
@@ -49,6 +54,9 @@ importers:
       '@types/node':
         specifier: ^20.14.10
         version: 20.14.10
+      '@types/svg-parser':
+        specifier: ^2.0.6
+        version: 2.0.6
       jsdom:
         specifier: ^24.1.0
         version: 24.1.0
@@ -1085,6 +1093,10 @@ packages:
     dependencies:
       '@types/prop-types': 15.7.12
       csstype: 3.1.3
+    dev: true
+
+  /@types/svg-parser@2.0.6:
+    resolution: {integrity: sha512-xrXwOltwMcLrKy79rv4MoalnD82oYLyXAVeeSyrkvR7XdCH4i7YqLNQWxyZ8KPpawtQShiKOse+pmtLeSLtCfQ==}
     dev: true
 
   /@typescript-eslint/eslint-plugin@7.17.0(@typescript-eslint/parser@7.17.0)(eslint@8.57.0)(typescript@5.5.3):
@@ -3948,6 +3960,10 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
     dev: true
+
+  /svg-parser@2.0.4:
+    resolution: {integrity: sha512-e4hG1hRwoOdRb37cIMSgzNsxyzKfayW6VOflrwvR+/bzrkyxY/31WkbgnQpgtrNp1SdpJvpUAGTa/ZoiPNDuRQ==}
+    dev: false
 
   /svgo@3.3.2:
     resolution: {integrity: sha512-OoohrmuUlBs8B8o6MB2Aevn+pRIH9zDALSR+6hhqVfa6fRwG/Qw9VUMSMW9VNg2CFc/MTIfabtdOVl9ODIJjpw==}

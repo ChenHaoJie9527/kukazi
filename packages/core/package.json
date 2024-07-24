@@ -24,6 +24,7 @@
   "devDependencies": {
     "@types/figlet": "^1.5.8",
     "@types/node": "^20.14.10",
+    "@types/svg-parser": "^2.0.6",
     "jsdom": "^24.1.0",
     "memfs": "^4.9.3",
     "rimraf": "^6.0.1",
@@ -45,6 +46,7 @@
     "boxen": "^6.0.0",
     "chalk": "^4.1.2",
     "figlet": "^1.7.0",
+    "svg-parser": "^2.0.4",
     "svgo": "^3.3.2"
   }
 }

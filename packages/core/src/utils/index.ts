@@ -1,7 +1,7 @@
 import { SVGXML } from "@/constant";
 import chalk from "chalk"
 import boxen, { Options } from "boxen"
-// import { fsMock } from "@/mock/fs-mock"
+import { fsMock } from "@/mock/fs-mock"
 
 
 export function getSvgElement(svgString: string) {
@@ -11,19 +11,19 @@ export function getSvgElement(svgString: string) {
     return svgEle;
 }
 
-// export function readSVGFile(fileName: string): string {
-//     return fsMock.getMockFileSystem().readFileSync(fileName) || '';
-// }
+export function readSVGFile(fileName: string): string {
+    return fsMock.getMockFileSystem().readFileSync(fileName) || '';
+}
 
 export function getAssetPath(fileName: string): string {
     return fileName;
 }
 
-// export function mockSVGFiles(files: { [filename: string]: string }) {
-//     for (const [fileName, content] of Object.entries(files)) {
-//         fsMock.addMockFile(fileName, content);
-//     }
-// }
+export function mockSVGFiles(files: { [filename: string]: string }) {
+    for (const [fileName, content] of Object.entries(files)) {
+        fsMock.addMockFile(fileName, content);
+    }
+}
 
 export function setTerminalMessage(message: any, files: any[], directory: string, callback?: (msg: any) => void) {
     try {

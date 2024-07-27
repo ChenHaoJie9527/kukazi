@@ -1,0 +1,387 @@
+{
+  "tagName": "svg",
+  "type": "element",
+  "attributes": {
+    "xmlns": "http://www.w3.org/2000/svg",
+    "width": "15",
+    "height": "15",
+    "fill": "none"
+  },
+  "children": [
+    {
+      "tagName": "path",
+      "type": "element",
+      "attributes": {
+        "fill": "currentColor",
+        "fill-rule": "evenodd",
+        "d": "M14 1.75H1V.25h13z",
+        "clip-rule": "evenodd"
+      },
+      "children": []
+    },
+    {
+      "tagName": "rect",
+      "type": "element",
+      "attributes": {
+        "width": "1",
+        "height": "1",
+        "x": "8",
+        "y": "10",
+        "fill": "currentColor",
+        "rx": ".5",
+        "transform": "rotate(-180 8 10)"
+      },
+      "children": []
+    },
+    {
+      "tagName": "rect",
+      "type": "element",
+      "attributes": {
+        "width": "1",
+        "height": "1",
+        "x": "2",
+        "y": "10",
+        "fill": "currentColor",
+        "rx": ".5",
+        "transform": "rotate(-180 2 10)"
+      },
+      "children": []
+    },
+    {
+      "tagName": "rect",
+      "type": "element",
+      "attributes": {
+        "width": "1",
+        "height": "1",
+        "x": "8",
+        "y": "12",
+        "fill": "currentColor",
+        "rx": ".5",
+        "transform": "rotate(-180 8 12)"
+      },
+      "children": []
+    },
+    {
+      "tagName": "rect",
+      "type": "element",
+      "attributes": {
+        "width": "1",
+        "height": "1",
+        "x": "2",
+        "y": "12",
+        "fill": "currentColor",
+        "rx": ".5",
+        "transform": "rotate(-180 2 12)"
+      },
+      "children": []
+    },
+    {
+      "tagName": "rect",
+      "type": "element",
+      "attributes": {
+        "width": "1",
+        "height": "1",
+        "x": "8",
+        "y": "8",
+        "fill": "currentColor",
+        "rx": ".5",
+        "transform": "rotate(-180 8 8)"
+      },
+      "children": []
+    },
+    {
+      "tagName": "rect",
+      "type": "element",
+      "attributes": {
+        "width": "1",
+        "height": "1",
+        "x": "8",
+        "y": "14",
+        "fill": "currentColor",
+        "rx": ".5",
+        "transform": "rotate(-180 8 14)"
+      },
+      "children": []
+    },
+    {
+      "tagName": "rect",
+      "type": "element",
+      "attributes": {
+        "width": "1",
+        "height": "1",
+        "x": "2",
+        "y": "8",
+        "fill": "currentColor",
+        "rx": ".5",
+        "transform": "rotate(-180 2 8)"
+      },
+      "children": []
+    },
+    {
+      "tagName": "rect",
+      "type": "element",
+      "attributes": {
+        "width": "1",
+        "height": "1",
+        "x": "2",
+        "y": "14",
+        "fill": "currentColor",
+        "rx": ".5",
+        "transform": "rotate(-180 2 14)"
+      },
+      "children": []
+    },
+    {
+      "tagName": "rect",
+      "type": "element",
+      "attributes": {
+        "width": "1",
+        "height": "1",
+        "x": "10",
+        "y": "8",
+        "fill": "currentColor",
+        "rx": ".5",
+        "transform": "rotate(-180 10 8)"
+      },
+      "children": []
+    },
+    {
+      "tagName": "rect",
+      "type": "element",
+      "attributes": {
+        "width": "1",
+        "height": "1",
+        "x": "10",
+        "y": "14",
+        "fill": "currentColor",
+        "rx": ".5",
+        "transform": "rotate(-180 10 14)"
+      },
+      "children": []
+    },
+    {
+      "tagName": "rect",
+      "type": "element",
+      "attributes": {
+        "width": "1",
+        "height": "1",
+        "x": "12",
+        "y": "8",
+        "fill": "currentColor",
+        "rx": ".5",
+        "transform": "rotate(-180 12 8)"
+      },
+      "children": []
+    },
+    {
+      "tagName": "rect",
+      "type": "element",
+      "attributes": {
+        "width": "1",
+        "height": "1",
+        "x": "12",
+        "y": "14",
+        "fill": "currentColor",
+        "rx": ".5",
+        "transform": "rotate(-180 12 14)"
+      },
+      "children": []
+    },
+    {
+      "tagName": "rect",
+      "type": "element",
+      "attributes": {
+        "width": "1",
+        "height": "1",
+        "x": "6",
+        "y": "8",
+        "fill": "currentColor",
+        "rx": ".5",
+        "transform": "rotate(-180 6 8)"
+      },
+      "children": []
+    },
+    {
+      "tagName": "rect",
+      "type": "element",
+      "attributes": {
+        "width": "1",
+        "height": "1",
+        "x": "6",
+        "y": "14",
+        "fill": "currentColor",
+        "rx": ".5",
+        "transform": "rotate(-180 6 14)"
+      },
+      "children": []
+    },
+    {
+      "tagName": "rect",
+      "type": "element",
+      "attributes": {
+        "width": "1",
+        "height": "1",
+        "x": "4",
+        "y": "8",
+        "fill": "currentColor",
+        "rx": ".5",
+        "transform": "rotate(-180 4 8)"
+      },
+      "children": []
+    },
+    {
+      "tagName": "rect",
+      "type": "element",
+      "attributes": {
+        "width": "1",
+        "height": "1",
+        "x": "4",
+        "y": "14",
+        "fill": "currentColor",
+        "rx": ".5",
+        "transform": "rotate(-180 4 14)"
+      },
+      "children": []
+    },
+    {
+      "tagName": "rect",
+      "type": "element",
+      "attributes": {
+        "width": "1",
+        "height": "1",
+        "x": "8",
+        "y": "6",
+        "fill": "currentColor",
+        "rx": ".5",
+        "transform": "rotate(-180 8 6)"
+      },
+      "children": []
+    },
+    {
+      "tagName": "rect",
+      "type": "element",
+      "attributes": {
+        "width": "1",
+        "height": "1",
+        "x": "2",
+        "y": "6",
+        "fill": "currentColor",
+        "rx": ".5",
+        "transform": "rotate(-180 2 6)"
+      },
+      "children": []
+    },
+    {
+      "tagName": "rect",
+      "type": "element",
+      "attributes": {
+        "width": "1",
+        "height": "1",
+        "x": "8",
+        "y": "4",
+        "fill": "currentColor",
+        "rx": ".5",
+        "transform": "rotate(-180 8 4)"
+      },
+      "children": []
+    },
+    {
+      "tagName": "rect",
+      "type": "element",
+      "attributes": {
+        "width": "1",
+        "height": "1",
+        "x": "2",
+        "y": "4",
+        "fill": "currentColor",
+        "rx": ".5",
+        "transform": "rotate(-180 2 4)"
+      },
+      "children": []
+    },
+    {
+      "tagName": "rect",
+      "type": "element",
+      "attributes": {
+        "width": "1",
+        "height": "1",
+        "x": "14",
+        "y": "10",
+        "fill": "currentColor",
+        "rx": ".5",
+        "transform": "rotate(-180 14 10)"
+      },
+      "children": []
+    },
+    {
+      "tagName": "rect",
+      "type": "element",
+      "attributes": {
+        "width": "1",
+        "height": "1",
+        "x": "14",
+        "y": "12",
+        "fill": "currentColor",
+        "rx": ".5",
+        "transform": "rotate(-180 14 12)"
+      },
+      "children": []
+    },
+    {
+      "tagName": "rect",
+      "type": "element",
+      "attributes": {
+        "width": "1",
+        "height": "1",
+        "x": "14",
+        "y": "8",
+        "fill": "currentColor",
+        "rx": ".5",
+        "transform": "rotate(-180 14 8)"
+      },
+      "children": []
+    },
+    {
+      "tagName": "rect",
+      "type": "element",
+      "attributes": {
+        "width": "1",
+        "height": "1",
+        "x": "14",
+        "y": "14",
+        "fill": "currentColor",
+        "rx": ".5",
+        "transform": "rotate(-180 14 14)"
+      },
+      "children": []
+    },
+    {
+      "tagName": "rect",
+      "type": "element",
+      "attributes": {
+        "width": "1",
+        "height": "1",
+        "x": "14",
+        "y": "6",
+        "fill": "currentColor",
+        "rx": ".5",
+        "transform": "rotate(-180 14 6)"
+      },
+      "children": []
+    },
+    {
+      "tagName": "rect",
+      "type": "element",
+      "attributes": {
+        "width": "1",
+        "height": "1",
+        "x": "14",
+        "y": "4",
+        "fill": "currentColor",
+        "rx": ".5",
+        "transform": "rotate(-180 14 4)"
+      },
+      "children": []
+    }
+  ]
+}

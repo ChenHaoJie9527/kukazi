@@ -1,0 +1,51 @@
+{
+  "tagName": "svg",
+  "type": "element",
+  "attributes": {
+    "xmlns": "http://www.w3.org/2000/svg",
+    "width": "300",
+    "height": "300"
+  },
+  "children": [
+    {
+      "tagName": "path",
+      "type": "element",
+      "attributes": {
+        "fill": "#8CC63F",
+        "d": "M30 150q120 130 240 0-120-130-240 0"
+      },
+      "children": []
+    },
+    {
+      "tagName": "circle",
+      "type": "element",
+      "attributes": {
+        "cx": "150",
+        "cy": "180",
+        "r": "80",
+        "fill": "#FFF200"
+      },
+      "children": []
+    },
+    {
+      "tagName": "path",
+      "type": "element",
+      "attributes": {
+        "fill": "none",
+        "stroke": "#000",
+        "stroke-width": "6",
+        "d": "M80 100q10-10 20 0m100 0q10-10 20 0m-100 40q30 20 60 0"
+      },
+      "children": []
+    },
+    {
+      "tagName": "path",
+      "type": "element",
+      "attributes": {
+        "fill": "#8CC63F",
+        "d": "M30 150q-20-10-20 20m260-20q20-10 20 20"
+      },
+      "children": []
+    }
+  ]
+}

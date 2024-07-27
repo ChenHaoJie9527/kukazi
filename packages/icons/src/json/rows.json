@@ -1,0 +1,23 @@
+{
+  "tagName": "svg",
+  "type": "element",
+  "attributes": {
+    "xmlns": "http://www.w3.org/2000/svg",
+    "width": "15",
+    "height": "15",
+    "fill": "none"
+  },
+  "children": [
+    {
+      "tagName": "path",
+      "type": "element",
+      "attributes": {
+        "fill": "currentColor",
+        "fill-rule": "evenodd",
+        "d": "M14 12.85H1v1.3h13zm0-4H1v1.3h13zm-13-4h13v1.3H1zm13-4H1v1.3h13z",
+        "clip-rule": "evenodd"
+      },
+      "children": []
+    }
+  ]
+}

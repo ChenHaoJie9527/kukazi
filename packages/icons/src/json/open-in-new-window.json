@@ -1,0 +1,44 @@
+{
+  "tagName": "svg",
+  "type": "element",
+  "attributes": {
+    "xmlns": "http://www.w3.org/2000/svg",
+    "width": "15",
+    "height": "15",
+    "fill": "none"
+  },
+  "children": [
+    {
+      "tagName": "path",
+      "type": "element",
+      "attributes": {
+        "fill": "currentColor",
+        "fill-rule": "evenodd",
+        "d": "M13 12a1 1 0 0 1-1 1H8.5a.5.5 0 0 1 0-1H12V3H3v3.5a.5.5 0 0 1-1 0V3a1 1 0 0 1 1-1h9a1 1 0 0 1 1 1z",
+        "clip-rule": "evenodd"
+      },
+      "children": []
+    },
+    {
+      "tagName": "path",
+      "type": "element",
+      "attributes": {
+        "stroke": "currentColor",
+        "stroke-linecap": "round",
+        "stroke-linejoin": "round",
+        "d": "M5.5 6.5h3v3"
+      },
+      "children": []
+    },
+    {
+      "tagName": "path",
+      "type": "element",
+      "attributes": {
+        "stroke": "currentColor",
+        "stroke-linecap": "round",
+        "d": "m2.5 12.5 6-6"
+      },
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "tagName": "svg",
+  "type": "element",
+  "attributes": {
+    "xmlns": "http://www.w3.org/2000/svg",
+    "xml:space": "preserve",
+    "width": "276.779",
+    "height": "192.573",
+    "viewBox": "0 0 73.231 50.952"
+  },
+  "children": [
+    {
+      "tagName": "g",
+      "type": "element",
+      "attributes": {
+        "transform": "translate(-3.061 -22.49)scale(.26458)"
+      },
+      "children": [
+        {
+          "tagName": "path",
+          "type": "element",
+          "attributes": {
+            "fill": "#8cc63f",
+            "d": "M30 181.286q120 192.573 240 0-120-192.572-240 0",
+            "style": "stroke-width:1.2171"
+          },
+          "children": []
+        },
+        {
+          "tagName": "circle",
+          "type": "element",
+          "attributes": {
+            "cx": "148.104",
+            "cy": "181.896",
+            "r": "80",
+            "fill": "#fff200"
+          },
+          "children": []
+        },
+        {
+          "tagName": "path",
+          "type": "element",
+          "attributes": {
+            "fill": "none",
+            "stroke": "#000",
+            "stroke-width": "6",
+            "d": "M80 100q10-10 20 0m100 0q10-10 20 0m-100 40q30 20 60 0"
+          },
+          "children": []
+        },
+        {
+          "tagName": "path",
+          "type": "element",
+          "attributes": {
+            "fill": "#8cc63f",
+            "d": "M31.57 178.277q-20-10-20 20m256.78-20.127q20-10 20 20"
+          },
+          "children": []
+        }
+      ]
+    }
+  ]
+}

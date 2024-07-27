@@ -1,0 +1,42 @@
+{
+  "tagName": "svg",
+  "type": "element",
+  "attributes": {
+    "xmlns": "http://www.w3.org/2000/svg",
+    "width": "274.265",
+    "height": "282.373",
+    "viewBox": "0 0 72.566 74.711"
+  },
+  "children": [
+    {
+      "tagName": "path",
+      "type": "element",
+      "attributes": {
+        "d": "m103.22 82.43-16.954 25.846-19.15-23.347 16.953-25.846Z",
+        "style": "opacity:.9;fill:red;fill-opacity:.996825;stroke:#000;stroke-width:.264999;stroke-linejoin:bevel;paint-order:stroke markers fill;fill-rule:nonzero",
+        "transform": "matrix(1.00001 0 0 .99482 -50.042 -58.694)"
+      },
+      "children": []
+    },
+    {
+      "tagName": "path",
+      "type": "element",
+      "attributes": {
+        "d": "m51.851 107.03-18.6-20.68 15.364-23.32 18.6 20.68Z",
+        "style": "opacity:.9;fill:#ffff07;fill-opacity:.936508;stroke:#000;stroke-width:.264999;stroke-linejoin:bevel;paint-order:stroke markers fill",
+        "transform": "matrix(1.0608 .00192 -.0231 1.10623 -33.162 -43.886)"
+      },
+      "children": []
+    },
+    {
+      "tagName": "path",
+      "type": "element",
+      "attributes": {
+        "d": "M47.948 108.221 29.424 85.31l16.483-24.045 18.524 22.913Z",
+        "style": "opacity:.9;fill:#0055d4;fill-opacity:.980952;stroke:#000;stroke-width:.264999;stroke-linejoin:bevel;paint-order:stroke markers fill",
+        "transform": "matrix(1.0317 .02731 .0018 1.09205 5.828 -44.877)"
+      },
+      "children": []
+    }
+  ]
+}

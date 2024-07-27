@@ -17,7 +17,7 @@
   "dependencies": {
     "@kukazi/core": "workspace:^",
     "ajv": "^8.17.1",
-    "next-svg-parser": "^1.0.5"
+    "next-svg-parser": "^1.0.7"
   },
   "devDependencies": {
     "@kukazi/scripts": "workspace:*",

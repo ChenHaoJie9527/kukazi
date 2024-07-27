@@ -1,12 +1,17 @@
 {
-  "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "outDir": "./dist",
-    "rootDir": "./src",
-    "composite": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "strict": true,
     "declaration": true,
-    "declarationMap": true
+    "outDir": "dist",
+    "rootDir": "src",
+    "skipLibCheck": true,
+    "composite": true,
+    "resolveJsonModule":true
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "scripts"],
   "exclude": ["node_modules", "dist"]
 }

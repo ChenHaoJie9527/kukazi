@@ -5,18 +5,30 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "private": true,
+  "type": "module",
   "scripts": {
     "optimize-svg": "kukazi-scripts optimize-svg src -v ",
-    "build": "kukazi-scripts icon-tasks && tsc"
+    "build": "kukazi-scripts icon-tasks && tsc",
+    "svg-json": "node src/convertSvgToJson.mjs"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@kukazi/types": "workspace:*"
+    "@kukazi/core": "workspace:^",
+    "ajv": "^8.17.1",
+    "next-svg-parser": "^1.0.5"
   },
   "devDependencies": {
     "@kukazi/scripts": "workspace:*",
-    "rimraf": "^6.0.1"
+    "@types/node": "^20.14.10",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0"
+  },
+  "overrides": {
+    "@kukazi/core": {
+      "vitest": "^x.x.x"
+    }
   }
 }

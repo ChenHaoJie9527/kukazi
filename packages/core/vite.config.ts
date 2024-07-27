@@ -15,7 +15,7 @@ export default defineConfig({
             },
         },
         rollupOptions: {
-            external: [/^vitest/, /^node:/, 'fs', 'path', 'fs/promise'],
+            external: ['vitest', /^node:/, 'fs', 'path', 'fs/promise'],
         },
         sourcemap: true,
         // 明确指定构建输出目录

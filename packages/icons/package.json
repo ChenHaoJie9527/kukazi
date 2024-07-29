@@ -7,9 +7,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "optimize-svg": "kukazi-scripts optimize-svg src -v ",
+    "optimize-svg": "kukazi-scripts optimize-svg src/assets -v ",
     "build": "kukazi-scripts icon-tasks && tsc",
-    "svg-json": "node src/convertSvgToJson.mjs"
+    "svg-json": "next-svg-parser ./src/assets ./src/json/"
   },
   "keywords": [],
   "author": "",
@@ -17,7 +17,7 @@
   "dependencies": {
     "@kukazi/core": "workspace:^",
     "ajv": "^8.17.1",
-    "next-svg-parser": "^1.0.8"
+    "next-svg-parser": "^1.2.6"
   },
   "devDependencies": {
     "@kukazi/scripts": "workspace:*",

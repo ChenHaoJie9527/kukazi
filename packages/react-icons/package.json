@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "@kukazi/icons": "workspace:*",
-    "@kukazi/types": "workspace:*",
     "react": "^18.x"
   },
   "devDependencies": {

@@ -3,10 +3,10 @@ import { join } from "path"
 import { IconMetaData } from "./types"
 
 export class IconMetaDataManager {
-  private cache: Record<string, IconMetaData> = {}
-  private readonly JSON_DIR = join(__dirname, "..", 'json')
+  private static cache: Record<string, IconMetaData> = {}
+  private static readonly JSON_DIR = join(__dirname, "..", 'json')
 
-  load(name: string) {
+  static load(name: string) {
     if (this.cache[name]) {
       return this.cache[name]
     }

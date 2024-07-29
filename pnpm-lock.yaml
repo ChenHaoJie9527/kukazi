@@ -97,8 +97,8 @@ importers:
         specifier: ^8.17.1
         version: 8.17.1
       next-svg-parser:
-        specifier: ^1.0.7
-        version: 1.0.7
+        specifier: ^1.0.8
+        version: 1.0.8
     devDependencies:
       '@kukazi/scripts':
         specifier: workspace:*
@@ -3189,8 +3189,8 @@ packages:
   /natural-compare@1.4.0:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
 
-  /next-svg-parser@1.0.7:
-    resolution: {integrity: sha512-HKDiLNOsuVfHuURmqggfv0uSln4EhDwdWa4jvU9HAYQnGNvsoofgf7o6BwBNqsUixcZBOO4iBo5C0dZWTGbK+A==}
+  /next-svg-parser@1.0.8:
+    resolution: {integrity: sha512-33Fr26j3FyRv0CtI/zpv8ptksZ+Z58f0GbmPurfnk3QpdzHWnKUzFDf3yNP4fppVmnzcVB+Or7qFZ9ir82s5kg==}
     engines: {node: '>=16.0.0'}
     dependencies:
       memfs: 4.9.4

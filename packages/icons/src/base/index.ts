@@ -1,5 +1,5 @@
 import { IconProps, IconMetaData, IconElement, IconAttributes } from "./types"
-import { IconMetaDataManager } from "./IconMetadata"
+import { IconMetaDataManager } from "./iconMetadata"
 
 export class BaseIcon {
   private props: IconProps
@@ -30,7 +30,7 @@ export class BaseIcon {
       newElement.attributes.transform = `rotate(${this.props.rotate})`
     }
 
-    newElement.children = newElement.children.map(child => this.applyProps(child))
+    newElement.children = newElement.children?.map(child => this.applyProps(child)) ?? []
 
     return newElement
   }

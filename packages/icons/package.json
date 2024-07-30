@@ -9,7 +9,8 @@
   "scripts": {
     "optimize-svg": "kukazi-scripts optimize-svg src/assets -v ",
     "build": "kukazi-scripts icon-tasks && tsc",
-    "svg-json": "next-svg-parser ./src/assets ./src/json/"
+    "svg-json": "next-svg-parser ./src/assets ./src/json/",
+    "test": "vitest"
   },
   "keywords": [],
   "author": "",
@@ -24,7 +25,9 @@
     "@types/node": "^20.14.10",
     "rimraf": "^6.0.1",
     "ts-node": "^10.9.2",
-    "tsconfig-paths": "^4.2.0"
+    "tsconfig-paths": "^4.2.0",
+    "vite": "^5.x",
+    "vitest": "^1.x"
   },
   "overrides": {
     "@kukazi/core": {

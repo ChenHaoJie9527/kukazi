@@ -17,7 +17,6 @@ class BaseIcon {
 
     applyProps(element) {
         const newElement = { ...element };
-        console.log('newElement =>', newElement.attributes);
         if (this.props.size) {
             newElement.attributes.width = this.props.size;
             newElement.attributes.height = this.props.size;
@@ -55,24 +54,17 @@ class BaseIcon {
 }
 
 const iconContainer = document.getElementById('icon-container');
-const iconSelect = document.getElementById('icon-select');
-const colorPicker = document.getElementById('color-picker');
-const sizeInput = document.getElementById('size-input');
-const rotateInput = document.getElementById('rotate-input');
 
 function updateIcon() {
     const icon = new BaseIcon({
-        name: iconSelect.value,
-        size: parseInt(sizeInput.value),
-        color: colorPicker.value,
-        rotate: parseInt(rotateInput.value)
+        name: 'test-icon',
+        size: parseInt(30),
+        color: '#fcebeb',
     });
-    console.log(icon);
-    iconContainer.innerHTML = icon.render();
+    const result = icon.render();
+    const createElement = document.createElement('div')
+    createElement.innerHTML = result;
+    iconContainer.appendChild(createElement);
 }
-
-[iconSelect, colorPicker, sizeInput, rotateInput].forEach(el => 
-    el.addEventListener('change', updateIcon)
-);
 
 updateIcon(); // 初始渲染
